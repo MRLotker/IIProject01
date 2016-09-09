@@ -1,0 +1,62 @@
+body {
+padding-top: 50px;
+/*https://www.sitepoint.com/community/t/how-to-use-myriad-pro/6109/5*/
+font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container-whole{
+  padding: 0 0 0 0;
+}
+
+.container-body{
+  padding: 0 50 50 0;
+}
+
+.body-row {
+  background-color: #ffffff;
+  position: relative;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.ad-row{
+  background-color: #3399ff;
+}
+
+.slider{
+  background-color: #3399ff;
+}
+
+.navbar-fixed-top{
+  background-color: #0099ff;
+  color: #ffffff;
+}
+
+.navbar{
+      margin-bottom: 0px;
+      border-radius: 0px;
+}
+
+.utility-bar{
+  background-image: url("../images/utility_bckgrnd.png");
+  background-position: center;
+  height: 111px;
+  color: black;
+  text-align: center;
+}
+
+.dashboard{
+  background-color: #33cc66;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.gradient{
+  background-image: url("../images/gradient.png");
+  background-position: center;
+  border-radius: 5px;
+  height: 200px;
+  padding: 15px 15px 15px 15px;
+}
