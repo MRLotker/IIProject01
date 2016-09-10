@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/spritestylesheet.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -37,14 +38,22 @@
     <div class="container">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">MINI of Raleigh</a></li>
-        <li><a href="#">?</a></li>
-        <li><a href="#">GEAR</a></li>
+        <li><a href="#"><img class="sprite sprite-icon_help"></a></li>
+        <li><a href="#"><img class="sprite sprite-icon_settings_white"></a></li>
       </ul>
     </div>
 </div>
 
 <div class="utility-bar">
-  <div class="row container">This is where the icons go.</div>
+  <div class="row container">
+    <ul class="nav navbar-nav navbar-center">
+      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
+      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
+      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
+      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
+      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
+    </ul>
+  </div>
 </div>
 
 
@@ -58,7 +67,12 @@
         </div>
         <div class="col-sm-4">
         </div>
-        <div class="col-sm-4">Search Bar
+        <div class="col-sm-4">
+<!-- https://teamtreehouse.com/community/how-do-i-put-icons-inside-of-input-fields -->
+          <div class="search">
+            <span class="fa fa-search"></span>
+            <input placeholder="Search term">
+          </div>
         </div>
       </div>
     </div>
