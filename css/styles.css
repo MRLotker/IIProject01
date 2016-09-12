@@ -1,5 +1,4 @@
 body {
-padding-top: 50px;
 /*https://www.sitepoint.com/community/t/how-to-use-myriad-pro/6109/5*/
 font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -19,8 +18,13 @@ img a {
   outline : none;
 }
 
+h2{
+  margin-top: 10px;
+}
 h3{
-  margin-top: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
 }
 
 .container-whole{
@@ -39,6 +43,134 @@ h3{
   margin: 0 auto;
 }
 
+.topnav{
+  color: white;
+  margin: 0 auto;
+}
+
+.navcenter{
+  width: 38%;
+  float: none;
+  margin: 0 auto;
+}
+
+.dashlink{
+  width: 60px;
+  height:60px;
+  display:block;
+  background: transparent url("../images/dashboard_inactive.png")
+}
+.dashlink:hover {
+  background-image: url('../images/dashboard_active.png');
+}
+
+.analytics{
+  width: 60px;
+  height:60px;
+  display:block;
+  background: transparent url("../images/analytics_inactive.png")
+}
+.analytics:hover {
+  background-image: url('../images/analytics_active.png');
+}
+.analytics:active {
+  background-image: url('../images/analytics_active.png');
+}
+
+.customers{
+  width: 60px;
+  height:60px;
+  display:block;
+  background: transparent url("../images/customers_inactive.png")
+}
+.customers:hover {
+  background-image: url('../images/customers_active.png');
+}
+.customers:active {
+  background-image: url('../images/customers_active.png');
+}
+
+.promotions{
+  width: 60px;
+  height:60px;
+  display:block;
+  background: transparent url("../images/promotions_inactive.png")
+}
+.promotions:hover {
+  background-image: url('../images/promotions_active.png');
+}
+.promotions:active {
+  background-image: url('../images/promotions_active.png');
+}
+
+.pagecreator{
+  width: 60px;
+  height:60px;
+  display:block;
+  background: transparent url("../images/pagecreator_inactive.png")
+}
+.pagecreator:hover {
+  background-image: url('../images/pagecreator_active.png');
+}
+.pagecreator:active {
+  background-image: url('../images/pagecreator_active.png');
+}
+
+.analytics{
+  width: 60px;
+  height:60px;
+  display:block;
+  background: transparent url("../images/analytics_inactive.png")
+}
+.analytics:hover {
+  background-image: url("../images/analytics_active.png");
+}
+.analytics:active {
+  background-image: url("../images/analytics_active.png");
+}
+
+
+/*http://stackoverflow.com/questions/20634868/put-icon-inside-input-element-in-a-form-not-as-background-image*/
+
+/*.search{
+  height: 30px;
+  width: 300px;
+  position: relative;
+  top:10px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border-color: #cccccc;
+  border-width: 0.25px;
+}
+
+#search{
+  height: 30px;
+  position: absolute;
+  right:10px;
+  top:10px;
+}*/
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.topspace{
+  padding-top: 10px;
+}
+
+#search {
+    margin-top: 10px;
+    resize: none;
+    background-color: white;
+    height: 32px;
+}
+
+#search img {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
 .body-row {
   background-color: #ffffff;
   position: relative;
@@ -46,19 +178,15 @@ h3{
   margin-left: 3px;
 }
 
-#announcements{
+#orangetxt{
   color: #ff6600;
 }
 
-.ad-row{
-  background-color: #3399ff;
+.announcements{
+  margin: 0 auto;
 }
 
-.slider{
-  background-color: #3399ff;
-}
-
-.navbar-fixed-top{
+.header-nav{
   background-color: #0099ff;
   color: #ffffff;
 }
@@ -78,22 +206,59 @@ h3{
 
 .dashboard{
   background-color: #33cc66;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-top: 20px;
   margin-bottom: 20px;
   height: 50px;
 }
 
+.dashboardtext{
+  margin: 0 auto;
+  color: white;
+}
+
 .gradient{
   background-image: url("../images/gradient.png");
   background-position: center;
-  border-radius: 5px;
+  border-radius:7px;
   height: 200px;
   padding: 15px 15px 15px 15px;
 }
 
-.outline {
-  border: 1px solid gray;
+/*.dropshadow{
+  box-shadow: 0px 3px 3px 3px #cccccc;
+}*/
+
+.rightborder {
+  border-right: 0.5px solid #cccccc;
+}
+
+.leftborder {
+  border-left: 0.5px solid #cccccc;
+}
+
+.topborder{
+  border-top: 0.5px solid #cccccc;
+}
+
+.padbottom{
+  padding-bottom: 10px;
+}
+
+.padtop{
+  padding-top: 10px;
+}
+
+.padall{
+  padding: 20px;
+}
+
+.paddingleft50{
+  padding-left: 50px;
+}
+
+.announcementp{
+  color: #003366;
 }
 
 .circlenumbers {
@@ -104,15 +269,21 @@ h3{
   text-align: center;
 }
 
+.supertxt{
+  font-size: 8px;
+  margin: 0;
+}
+
 .userbutton {
-  border: 1px solid black;
+  border: 1px solid #cccccc;
   border-radius: 5px;
   padding: 5px;
 }
 
 .roundcornerbutton {
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 2px;
+  padding: 0px;
+  text-align: center;
 }
 
 .facebook {
@@ -137,4 +308,82 @@ h3{
 
 .taskrow {
   padding: 10px;
+  border-bottom: 0.5px solid #cccccc;
+}
+
+.recomrow {
+  border-bottom: 0.5px dotted #cccccc;
+  padding: 5px;
+}
+
+.ribbonlft{
+  width: 14px;
+  padding-top: 73px;
+}
+
+.ribbonrt{
+  width: 14px;
+  padding-top: 73px;
+  padding-left: 0px;
+}
+
+.bluebar{
+  background-color: #3399ff;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.ribbonbox{
+  padding: 0;
+}
+
+.ribbongraph{
+  padding: 10px;
+}
+
+.sliderrow {
+  padding: 10px;
+}
+
+.blueslider{
+  background-color: #3399ff;
+  padding: 30px;
+  border-radius: 3px;
+  color: white;
+}
+
+.adrow{
+  background-color: #3399ff;
+  padding: 30px 30px 5px 30px;
+}
+
+.adbox{
+  background-color: white;
+  border-radius: 3px;
+  margin: 0px 10px 0px 0px;
+  float: left;
+}
+
+.adlft{
+  padding-left: 5%;
+}
+
+.adcenter{
+  margin: 0 auto;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.adrght{
+  float: left;
+  padding right: 5%;
+
+}
+
+.bottombox {
+  margin: 0 auto;
 }

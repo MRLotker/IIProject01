@@ -23,10 +23,10 @@
   <body>
     <!-- header fluid container -->
     <div class= "container-fluid container-whole">
-      <div class="row navbar navbar-fixed-top header-nav">
+      <div class="row navbar header-nav">
           <div class="container vert-center">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" color="ffffff">MINI of Raleigh</a></li>
+              <li><a href="#" class="topnav">MINI of Raleigh</a></li>
               <li><a href="#"><div class="sprite sprite-icon_help"></div></a></li>
               <li><a href="#"><div class="sprite sprite-icon_settings_white"></div></a></li>
             </ul>
@@ -34,14 +34,15 @@
       </div>
 
       <div class="utility-bar">
-        <div class="row container center">
-          <div class="vert-center">
-            <ul class="nav navbar-nav center">
-              <li><a href="#"><div class="sprite sprite-analytics_active"></div></a></li>
-              <li><a href="#"><div class="sprite sprite-dashboard_active"></div></a></li>
-              <li><a href="#"><div class="sprite sprite-customers_active"></div></a></li>
-              <li><a href="#"><div class="sprite sprite-analytics_active"></div></a></li>
-              <li><a href="#"><div class="sprite sprite-analytics_active"></div></a></li>
+        <div class="row center">
+          <div class="col-md-12">
+            <ul class="nav navbar-nav navcenter">
+              <li><a href="#"><div class="dashlink"></div></a></li>
+              <li><a href="#"><div class="analytics"></div></a></li>
+              <li><a href="#"><div class="customers"></div></a></li>
+              <li><a href="#"><div class="promotions"></div></a></li>
+              <li><a href="#"><div class="pagecreator"></div></a></li>
+              <li><a href="#"><div class="analytics"></div></a></li>
             </ul>
           </div>
         </div>
@@ -51,35 +52,41 @@
     <div class="container">
       <div class= "row">
         <div class="dashboard">
-        <div class="col-md-8 vert-center"><h3>Dashboard</h3>
+        <div class="col-md-8 vert-center dashboardtext"><h2>Dashboard</h2>
         </div>
-          <div class="col-md-4 search-bar form-group">
-            <div contenteditable="true" id="search">
-              <div class="sprite sprite-icon_search_blue"></div>
-            </div>
-          </div>
+        <div class="col-md-4 form-group search-bar">
+          <div contenteditable="true" id="search">
+          <img src="images/icon_search_blue.png">
+        </div>
+        <!-- <div class="col-md-4 form-group search-bar">
+          <input type="text" class="search">
+          <img src="images/icon_search_blue.png" id="search"> -->
+            <!-- <input type="text" id="search"> -->
+          <!-- </div> -->
         </div>
       </div>
     </div> <!-- close dash container -->
 
-    <div class="container">
+    <div class="container dropshadow">
       <div class="gradient">
         <div class="row body-row">
-            <div class="col-sm-3" id="announcements"><h4>ANNOUNCEMENTS</h4>
+            <div class="col-sm-3 announcements rightborder" id="orangetxt"><h4>ANNOUNCEMENTS</h4>
             </div>
-            <div class="col-sm-7"><p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus.</p>
+            <div class="col-sm-8 announcements topspace rightborder"><p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus.</p>
             </div>
-            <div class="col-sm-1"> carat
+            <div class="col-sm-1 topspace">
+                  <a href="#"><img src="images/left-carat.png"></a>
+                  <a href="#"><img src="images/right-carat.png"></a>
             </div>
         </div>
 
         <div class="row body-row">
-          <div class="col-md-4 outline">
+          <div class="col-md-4 topborder">
             <div class="row">
               <div class="col-md-10">
-                <h3>Tasks</h3>
+                <h2>Tasks</h2>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 topspace">
                 <img src="images/icon_settings_grey.png">
               </div>
             </div>
@@ -90,7 +97,7 @@
               </div>
 
               <div class="col-md-7">
-                <p>Welcome Contacts</p>
+                <h3>Welcome Contacts</h3>
               </div>
 
               <div class="col-md-3">
@@ -107,7 +114,7 @@
               </div>
 
               <div class="col-md-7">
-                <p>Provide Responses</p>
+                <h3>Provide Responses<h3>
               </div>
 
               <div class="col-md-3">
@@ -124,7 +131,7 @@
               </div>
 
               <div class="col-md-7">
-                <p>Review Activity</p>
+                <h3>Review Activity</h3>
               </div>
 
               <div class="col-md-3">
@@ -141,7 +148,7 @@
               </div>
 
               <div class="col-md-7">
-                <p>Reach Out</p>
+                <h3>Reach Out</h3>
               </div>
 
               <div class="col-md-3">
@@ -154,7 +161,7 @@
 
             <div class="row">
               <div class="col-md-12">
-                <h3>Recommendations</h3>
+                <h2>Recommendations</h2>
               </div>
             </div>
 
@@ -164,8 +171,8 @@
               </div>
 
               <div class="col-md-10">
-                <p>Article</p>
-                <p>7 Steps to getting more Fans</p>
+                <p class="supertxt">Article</p>
+                <h3>7 Steps to getting more Fans</h3>
               </div>
             </div>
 
@@ -175,8 +182,8 @@
               </div>
 
               <div class="col-md-10">
-                <p>Article</p>
-                <p>Increase traction with more interactions</p>
+                <p class="supertxt">Article</p>
+                <h3>Increase traction with more interactions</h3>
               </div>
             </div>
 
@@ -186,8 +193,8 @@
               </div>
 
               <div class="col-md-10">
-                <p>Checklist</p>
-                <p>Creating a Promotion</p>
+                <p class="supertxt">Checklist</p>
+                <h3>Creating a Promotion</h3>
               </div>
             </div>
 
@@ -197,18 +204,18 @@
               </div>
 
               <div class="col-md-10">
-                <p>Tip</p>
-                <p>Share More</p>
+                <p class="supertxt">Tip</p>
+                <h3>Share More</h3>
               </div>
             </div>
 
           </div>
 
-          <div class="col-md-8 outline">
+          <div class="col-md-8 rightcolumn topborder leftborder">
 
             <div class="row">
                 <div class="col-md-12">
-                  <h3>Analytics</h3>
+                  <h2>Analytics</h2>
                 </div>
             </div>
 
@@ -224,11 +231,11 @@
             </div>
 
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 rightborder">
                   <img src= "images/analytics_graph.png">
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 paddingleft50">
 
                   <div class="row">
                     <p>CHANNELS</p>
@@ -250,7 +257,7 @@
 
             </div>
 
-            <div class="row">
+            <div class="row padtop padbottom">
               <div class="col-md-1"><img src="images/icon_check_orange.png">
               </div>
               <div class="col-md-2">
@@ -279,13 +286,81 @@
             </div>
 
             <div class="row">
+
+              <div class="col-xs-6 padbottom">
+
+                <div class="row">
+                  <div class="col-xs-1 ribbonlft">
+                      <img src="images/blueribbon_left.png">
+                  </div>
+
+                  <div class="col-xs-10 userbutton roundcornerbutton ribbonbox">
+                    <img src="images/user_green_lg.png">
+                    <div class="bluebar">
+                    <h3>75 CONTACTS</h3>
+                    <p>4 INFLUENCERS</p></div>
+                    <img src="images/analytics_greengraph_sm.png" class="ribbongraph">
+                  </div>
+
+                  <div class="col-xs-1 ribbonrt"><img src="images/blueribbon_right.png">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-6 padbottom">
+
+                <div class="row">
+                  <div class="col-xs-1 ribbonlft">
+                      <img src="images/blueribbon_left.png">
+                  </div>
+
+                  <div class="col-xs-10 userbutton roundcornerbutton ribbonbox">
+                    <img src="images/user_orange_lg.png">
+                    <div class="bluebar">
+                    <h3>17 CUSTOMERS</h3>
+                    <p>0 INFLUENCERS</p></div>
+                    <img src="images/analytics_orangegraph_sm.png" class="ribbongraph">
+                  </div>
+
+                  <div class="col-xs-1 ribbonrt"><img src="images/blueribbon_right.png">
+                  </div>
+                </div>
+
+              </div>
+
             </div>
 
+            <div class="row sliderrow topborder">
+              <div class="col-md-12 blueslider">
+                <p>DID YOU KNOW?</p>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- close 4/8 body row -->
 
+        <div class="row adrow">
 
-
+          <div class="bottomrow">
+          <div class="col-md-4 adlft bottombox ">
+          <div class="adbox adlft">
+            <img src="images/ad1.png">
           </div>
         </div>
+
+        <div class="col-md-4 col-centered bottombox">
+          <div class="adbox adcenter">
+            <img src="images/ad2.png">
+          </div>
+        </div>
+
+        <div class="col-md-4 adrght bottombox ">
+          <div class="adbox adrght">
+            <img src="images/ad3.png">
+          </div>
+        </div>
+      </div>
+      </div>
 
       </div>
     </div> <!-- close body container -->
