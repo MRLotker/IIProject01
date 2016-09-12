@@ -9,131 +9,299 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Lotker Intermediate Interactive Project 01</title>
+    <title>Lotker Project 01</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/spritestylesheet.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
-<!-- whole page fluid container -->
-<div class= "container-fluid container-whole">
+    <!-- header fluid container -->
+    <div class= "container-fluid container-whole">
+      <div class="row navbar navbar-fixed-top header-nav">
+          <div class="container vert-center">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" color="ffffff">MINI of Raleigh</a></li>
+              <li><a href="#"><div class="sprite sprite-icon_help"></div></a></li>
+              <li><a href="#"><div class="sprite sprite-icon_settings_white"></div></a></li>
+            </ul>
+          </div>
+      </div>
 
-<!-- need to fix height of this nav bar and stacking when width decreases -->
-<!--Source url: https://getbootstrap.com/components/#navbar-->
-<div class="row navbar navbar-fixed-top header-nav">
-    <div class="container">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">MINI of Raleigh</a></li>
-        <li><a href="#"><img class="sprite sprite-icon_help"></a></li>
-        <li><a href="#"><img class="sprite sprite-icon_settings_white"></a></li>
-      </ul>
-    </div>
-</div>
-
-<div class="utility-bar">
-  <div class="row container">
-    <ul class="nav navbar-nav navbar-center">
-      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
-      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
-      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
-      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
-      <li><a href="#"><img class="sprite sprite-analytics_active"></a></li>
-    </ul>
-  </div>
-</div>
-
-
-<!-- whole body container begins -->
-<div class= "container container-body">
-
-<!-- green dashboard w search bar begins -->
-    <div class="dashboard">
-      <div class= "row">
-        <div class="col-sm-4"><h3>Dashboard</h3>
-        </div>
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-<!-- https://teamtreehouse.com/community/how-do-i-put-icons-inside-of-input-fields -->
-          <div class="search">
-            <span class="fa fa-search"></span>
-            <input placeholder="Search term">
+      <div class="utility-bar">
+        <div class="row container center">
+          <div class="vert-center">
+            <ul class="nav navbar-nav center">
+              <li><a href="#"><div class="sprite sprite-analytics_active"></div></a></li>
+              <li><a href="#"><div class="sprite sprite-dashboard_active"></div></a></li>
+              <li><a href="#"><div class="sprite sprite-customers_active"></div></a></li>
+              <li><a href="#"><div class="sprite sprite-analytics_active"></div></a></li>
+              <li><a href="#"><div class="sprite sprite-analytics_active"></div></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </div>     <!-- close header container -->
 
-<!-- main body w gradient border begins -->
-<div class="gradient">
+    <div class="container">
+      <div class= "row">
+        <div class="dashboard">
+        <div class="col-md-8 vert-center"><h3>Dashboard</h3>
+        </div>
+          <div class="col-md-4 search-bar form-group">
+            <div contenteditable="true" id="search">
+              <div class="sprite sprite-icon_search_blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- close dash container -->
 
-<!-- announcements bar -->
-          <div class="row body-row">
-              <div class="col-sm-3"><h4>ANNOUNCEMENTS</h4>
+    <div class="container">
+      <div class="gradient">
+        <div class="row body-row">
+            <div class="col-sm-3" id="announcements"><h4>ANNOUNCEMENTS</h4>
+            </div>
+            <div class="col-sm-7"><p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus.</p>
+            </div>
+            <div class="col-sm-1"> carat
+            </div>
+        </div>
+
+        <div class="row body-row">
+          <div class="col-md-4 outline">
+            <div class="row">
+              <div class="col-md-10">
+                <h3>Tasks</h3>
               </div>
-              <div class="col-sm-7">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus.
+              <div class="col-md-2">
+                <img src="images/icon_settings_grey.png">
               </div>
-              <div class="col-sm-1"> carat buttons
+            </div>
+
+            <div class="row taskrow">
+              <div class="col-md-2">
+                <p class="circlenumbers">1</p>
               </div>
+
+              <div class="col-md-7">
+                <p>Welcome Contacts</p>
+              </div>
+
+              <div class="col-md-3">
+                <div class="userbutton">
+                  <img src="images/user_lightgrey_sm.png">
+                  <span>32</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row taskrow">
+              <div class="col-md-2">
+                <p class="circlenumbers">2</p>
+              </div>
+
+              <div class="col-md-7">
+                <p>Provide Responses</p>
+              </div>
+
+              <div class="col-md-3">
+                <div class="userbutton">
+                  <img src="images/user_lightgrey_sm.png">
+                  <span>36</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row taskrow">
+              <div class="col-md-2">
+                <p class="circlenumbers">3</p>
+              </div>
+
+              <div class="col-md-7">
+                <p>Review Activity</p>
+              </div>
+
+              <div class="col-md-3">
+                <div class="userbutton">
+                  <img src="images/user_lightgrey_sm.png">
+                  <span>36</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row taskrow">
+              <div class="col-md-2">
+                <p class="circlenumbers">4</p>
+              </div>
+
+              <div class="col-md-7">
+                <p>Reach Out</p>
+              </div>
+
+              <div class="col-md-3">
+                <div class="userbutton">
+                  <img src="images/user_lightgrey_sm.png">
+                  <span>3</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Recommendations</h3>
+              </div>
+            </div>
+
+            <div class="row recomrow">
+              <div class="col-md-2">
+                <img src="images/icon_page_green.png">
+              </div>
+
+              <div class="col-md-10">
+                <p>Article</p>
+                <p>7 Steps to getting more Fans</p>
+              </div>
+            </div>
+
+            <div class="row recomrow">
+              <div class="col-md-2">
+                <img src="images/icon_page_green.png">
+              </div>
+
+              <div class="col-md-10">
+                <p>Article</p>
+                <p>Increase traction with more interactions</p>
+              </div>
+            </div>
+
+            <div class="row recomrow">
+              <div class="col-md-2">
+                <img src="images/icon_check_green.png">
+              </div>
+
+              <div class="col-md-10">
+                <p>Checklist</p>
+                <p>Creating a Promotion</p>
+              </div>
+            </div>
+
+            <div class="row recomrow">
+              <div class="col-md-2">
+                <img src="images/icon_lightbulb_green.png">
+              </div>
+
+              <div class="col-md-10">
+                <p>Tip</p>
+                <p>Share More</p>
+              </div>
+            </div>
+
           </div>
 
-<!--  -->
-            <div class="row body-row">
-              <!-- left column -->
-              <div class="col-sm-4">
-                <div class="row"><h3>Tasks</h3></div>
-                <div class="row">Welcome Contacts</div>
-                <div class="row">Provide Responses</div>
-                <div class="row">Review Activity</div>
-                <div class="row">Reach Out</div>
-                <div class="row"><h3>Recommendations</h3></div>
-                <div class="row">7 Steps to getting more Fans</div>
-                <div class="row">Increase traction with more interactions</div>
-                <div class="row">Creating a Promotion</div>
-                <div class="row">Share More</div>
-              </div>
-              <!-- right column -->
-              <div class="col-sm-8">
-                <div class="row"><h3>Analytics</h3></div>
-                <div class="row">dude boxes</div>
-                <div class="row slider"><h4>Did You Know?</h4></div>
-              </div>
+          <div class="col-md-8 outline">
+
+            <div class="row">
+                <div class="col-md-12">
+                  <h3>Analytics</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                  <p>Activity</p>
+                </div>
+
+                <div class="col-md-6">
+                  <p>DROPDOWN</p>
+                </div>
 
             </div>
-            <!-- row for the bottom of the page ads -->
-            <div class="row ad-row">ADS AT BOTTOM OF PAGE</div>
+
+            <div class="row">
+                <div class="col-md-8">
+                  <img src= "images/analytics_graph.png">
+                </div>
+
+                <div class="col-md-4">
+
+                  <div class="row">
+                    <p>CHANNELS</p>
+                  </div>
+
+                  <div class="row">
+                    <img src= "images/channels_piechart.png">
+                  </div>
+
+                  <div class="row">
+                    <p>REFERRALS</p>
+                  </div>
+
+                  <div class="row">
+                    <img src= "images/referrals_piechart.png">
+                  </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-1"><img src="images/icon_check_orange.png">
+              </div>
+              <div class="col-md-2">
+                <div class="roundcornerbutton facebook"><p>Facebook</p></div>
+              </div>
+
+              <div class="col-md-1"><img src="images/icon_check_orange.png">
+              </div>
+              <div class="col-md-2">
+                <div class="roundcornerbutton twitter"><p>Twitter</p></div>
+              </div>
+
+              <div class="col-md-1"><img src="images/icon_check_orange.png">
+              </div>
+              <div class="col-md-2">
+                <div class="roundcornerbutton foursquare"><p>Foursquare</p></div>
+              </div>
+
+              <div class="col-md-1"><img src="images/icon_check_orange.png">
+              </div>
+              <div class="col-md-2">
+                <div class="roundcornerbutton googleplus"><p>Google+</p></div>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- close body container -->
 
 
 
 
 
-<!-- closes main body container w gradient border -->
-</div>
 
-<!-- closes whole body container -->
-</div>
 
-<!-- closes whole page fluid container -->
-</div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <script src="js/ie10-viewport-bug-workaround.js"></script> -->
-  </body>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!-- <script src="js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
 </html>

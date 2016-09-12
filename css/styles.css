@@ -4,6 +4,25 @@ padding-top: 50px;
 font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*http://stackoverflow.com/questions/814366/how-can-i-remove-the-outline-around-hyperlinks-images*/
+a.sprite {
+  outline : none;
+  border: 0px;
+}
+
+img {
+  outline : none;
+  border: none;
+}
+
+img a {
+  outline : none;
+}
+
+h3{
+  margin-top: 15px;
+}
+
 .container-whole{
   padding: 0 0 0 0;
 }
@@ -12,11 +31,23 @@ font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetic
   padding: 0 50 50 0;
 }
 
+.header-nav{
+  color: white;
+}
+
+.vert-center{
+  margin: 0 auto;
+}
+
 .body-row {
   background-color: #ffffff;
   position: relative;
   margin-right: 3px;
   margin-left: 3px;
+}
+
+#announcements{
+  color: #ff6600;
 }
 
 .ad-row{
@@ -59,4 +90,51 @@ font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetic
   border-radius: 5px;
   height: 200px;
   padding: 15px 15px 15px 15px;
+}
+
+.outline {
+  border: 1px solid gray;
+}
+
+.circlenumbers {
+  background-color: #33cc66;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.userbutton {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.roundcornerbutton {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.facebook {
+  color: white;
+  background-color: #003366;
+}
+
+.twitter {
+  color: white;
+  background-color: #3399ff;
+}
+
+.foursquare{
+  color: white;
+  background-color: #336699;
+}
+
+.googleplus{
+  color: white;
+  background-color: #33cc66;
+}
+
+.taskrow {
+  padding: 10px;
 }
